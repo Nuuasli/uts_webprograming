@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-y: hidden;
+}
+.back {
+  background-image: url(https://i.pinimg.com/originals/a1/34/22/a13422ec6437ea3b036875cd7880c65c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.baner {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  height: 480px;
+  justify-content: space-between;
+}
+.baner img {
+  width: 100%;
+}
+.left {
+  top: 200px;
+  left: 8%;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  align-items: center;
+  width: 50%;
+  z-index: 2;
+  font-family: sans-serif;
+}
+.left .left-text {
+  font-size: 45px;
+  font-weight: 800;
+}
+.left p {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.button {
+  border: 1px solid black;
+  padding: 10px 10px;
+  background-color: beige;
+  border-radius: 100px;
+  width: 140px;
+  height: 30px;
+  margin-top: 450px;
+  margin-left: 120px;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+.button a {
+  display: flex;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  justify-content: center;
+  margin-top: -6px;
+}
+
+.slider {
+  display: grid;
+  position: absolute;
+  /* top: 5.5rem; */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  background-color: transparent;
+}
+.slider .slide-container {
+  position: absolute;
+  width: 400%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  animation: slider 20s infinite;
+}
+.slider .slide-container .slide {
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  float: left;
+  overflow: hidden;
+}
+.slider .slide-container .slide img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+@keyframes slider {
+  0%,
+  25% {
+    left: 0;
+  }
+
+  30%,
+  55% {
+    left: -100%;
+  }
+
+  60%,
+  85% {
+    left: -200%;
+  }
+
+  90%,
+  100% {
+    left: -300%;
+  }
+}
+
+.container-produk {
+  width: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+  align-items: center;
+}
+.header h1 {
+  font-size: 40px;
+}
+.header p {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+}
+.tombol-kembali {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.tombol-kembali a {
+  margin: 10px;
+  font-size: 30px;
+  color: black;
+}
+
+.card-produk {
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: lightgray;
+  border-radius: 25px 25px 0 0;
+}
+.card-produk table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+  border: 2px solid;
+  padding: 10px 10px;
+  justify-content: center;
+}
+
+.card-produk table {
+  background-color: white;
+}
+
+.card-produk a {
+  font-size: 20px;
+}
+
+.judul {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 60%;
+  align-items: center;
+}
+
+.content {
+  padding: 30px;
+  width: 50%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  /* box-shadow: 5px 10px 20px; */
+  color: white;
+  backdrop-filter: blur(15px);
+}
+
+.content .nama {
+  margin-top: 100px;
+}
+input[type='text'] {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+input[type='submit'] {
+  margin-top: 20px;
+  width: 30%;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.back-arrow a {
+  font-size: 30px;
+  color: white;
+}
+
+.produk-detail {
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: lightgray;
+  border-radius: 25px;
+}
+.detail-judul {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.detail-judul p {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 20px;
+}
+
+.produk-detail .close {
+  font-size: 30px;
+  color: black;
+}
+
+.produk-detail table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+  border: 2px solid;
+  padding: 10px 10px;
+  justify-content: center;
+}
+
+.produk-detail table {
+  background-color: white;
+}
+
+.produk-detail a {
+  font-size: 20px;
+}
