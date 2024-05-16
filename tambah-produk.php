@@ -11,7 +11,7 @@
   <body class="back">
     <div class="content">
       <div class="back-arrow">
-        <a href=" /produk.php"><i class="bi bi-arrow-left-circle"></i></a>
+        <a href=" /index.php"><i class="bi bi-arrow-left-circle"></i></a>
       </div>
       <form action="produk-store.php" method="post">
         <div class="judul">
