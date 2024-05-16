@@ -13,7 +13,7 @@ if (isset($_POST["submit"])) {
   $result = mysqli_query($conn, $sql);
 
   if ($result) {
-    header("Refresh: 0.5; url= /produk.php");
+    header("Refresh: 0.5; url= /index.php");
     exit;
   } else {
     echo "Failed: " . mysqli_error($conn);
@@ -40,7 +40,7 @@ if (isset($_POST["submit"])) {
   ?>
   <div class="content">
     <div class="back-arrow">
-      <a href="/produk.php"><i class="bi bi-arrow-left-circle"></i></a>
+      <a href="/index.php"><i class="bi bi-arrow-left-circle"></i></a>
     </div>
     <form method="post">
       <div class="judul">
