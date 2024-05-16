@@ -20,7 +20,7 @@
 <body>
   <div class="container-detail">
     <div class="produk-detail">
-      <a class="close" href=" /produk.php"><i class="bi bi-arrow-left-circle"></i></a>
+      <a class="close" href=" /index.php"><i class="bi bi-arrow-left-circle"></i></a>
       <div class="detail-judul">
         <h2>Detail Produk</h2>
         <p>ini adala detail dari produk yang anda pilih</p>
