@@ -10,7 +10,7 @@ if (hapusdata($conn, $id) > 0) {
 
 
 if ($conn) {
-    header("Refresh: 0.5; url= /produk.php");
+    header("Refresh: 0.5; url= /index.php");
     echo "<script>alert('Hapus data produk Berhasil');</script>";
 } else {
     echo "<script>alert('Gagal menghapus data produk');</script>";
