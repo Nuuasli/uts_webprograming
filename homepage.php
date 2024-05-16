@@ -15,7 +15,7 @@
       <p>silahkan jelajahi lebih dalam tentang produk-produk yang ada di toko kami</p>
     </div>
     <div class="button">
-      <a href="produk.php">Masuk</a>
+      <a href="index.php">Masuk</a>
     </div>
 
     <div class="slider">
