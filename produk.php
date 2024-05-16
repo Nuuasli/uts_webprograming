@@ -23,7 +23,7 @@ $p = getAllData($conn);
       <p>daftar produk yang stoknya masih ada di toko kami</p>
     </div>
     <div class="tombol-kembali">
-      <a href="index.php"><i class="bi bi-arrow-left-circle"></i></a>
+      <a href="homepage.php"><i class="bi bi-arrow-left-circle"></i></a>
       <a href="tambah-produk.php"><i class="bi bi-database-add"></i></a>
     </div>
 
